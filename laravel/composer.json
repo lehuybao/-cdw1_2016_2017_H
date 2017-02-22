@@ -21,7 +21,9 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+			     "Foostart\\Sample\\": "packages/foostart/sample/src/"
+
         }
     },
     "autoload-dev": {

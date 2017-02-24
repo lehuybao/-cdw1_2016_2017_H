@@ -1,14 +1,15 @@
 <?php
+
 namespace Foostart\Sample\model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class sample extends Model {
+class detail extends Model {
 
-    protected $table = 'sample';
-    protected $primaryKey = 'sample_id';
+    protected $table = 'details';
+    protected $primaryKey = 'details_id';
     public $timestamps = false;
-    protected $filltable = ["sample_name"];
+    protected $filltable = ["details_code", "details_img", "details_desription"];
 
     public function getData() {
         return self::paginate(5);

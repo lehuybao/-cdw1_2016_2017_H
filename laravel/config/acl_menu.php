@@ -76,5 +76,14 @@ return [
             "link" => '/admin/users/profile/self',
             "permissions" => []
         ],
+        [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Sample",
+            "route" => "Sample",
+            "link" => '/admin/sample',
+            "permissions" => ["_superadmin","_sample"]
+        ],
     ]
 ];

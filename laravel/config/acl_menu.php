@@ -16,12 +16,7 @@ return [
             "link" => '/admin/users/dashboard',
             "permissions" => []
         ],
-        [
-            "name" => "Sample",
-            "route" => "admin_sample",
-            "link" => '/admin/sample',
-            "permissions" => ["_superadmin", "_sample"]
-        ],
+      
         [
             /*
              * the name of the link: you will see it in the admin menu panel.
@@ -84,6 +79,24 @@ return [
             "route" => "Sample",
             "link" => '/admin/sample',
             "permissions" => ["_superadmin","_sample"]
+        ],
+        [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Banner",
+            "route" => "Banner",
+            "link" => '/admin/banner',
+            "permissions" => ["_superadmin","_banner"]
+        ],
+          [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Detail",
+            "route" => "Detail",
+            "link" => '/admin/detail',
+            "permissions" => ["_superadmin","_detail"]
         ],
     ]
 ];

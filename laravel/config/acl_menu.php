@@ -116,6 +116,16 @@ return [
             "link" => '/admin/news',
             "permissions" => ["_superadmin","_news"]
         ],
+         [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Work",
+            "route" => "admin_work",
+            "link" => '/admin/work',
+            "permissions" => ["_superadmin","_work"]
+        ],
+
 
     ]
 ];

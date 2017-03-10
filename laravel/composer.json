@@ -24,7 +24,8 @@
             "App\\": "app/",
             "Foostart\\Sample\\": "packages/foostart/sample/src/",
            
-            "Foostart\\News\\": "packages/foostart/news/src/"
+            "Foostart\\News\\": "packages/foostart/news/src/",
+              "Foostart\\Work\\": "packages/foostart/work/src/"
         }
     },
     "autoload-dev": {

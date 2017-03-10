@@ -143,6 +143,7 @@ return [
         Foostart\Sample\SampleServiceProvider::class,
       
         Foostart\News\NewsServiceProvider::class,
+         Foostart\Work\WorkServiceProvider::class,
         /*
          * Package Service Providers...
          */

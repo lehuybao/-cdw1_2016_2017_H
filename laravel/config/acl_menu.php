@@ -16,7 +16,6 @@ return [
             "link" => '/admin/users/dashboard',
             "permissions" => []
         ],
-      
         [
             /*
              * the name of the link: you will see it in the admin menu panel.
@@ -76,27 +75,46 @@ return [
              * Route to edit the current user profile
              */
             "name" => "Sample",
-            "route" => "Sample",
+            "route" => "admin_sample",
             "link" => '/admin/sample',
             "permissions" => ["_superadmin","_sample"]
+        ],
+        // [
+        //     /*
+        //      * Route to edit the current user profile
+        //      */
+        //     "name" => "SlideShow",
+        //     "route" => "admin_slideshow",
+        //     "link" => '/admin/slideshow',
+        //     "permissions" => ["_superadmin","_slideshow"]
+        // ],
+        //  [
+        //     /*
+        //      * Route to edit the current user profile
+        //      */
+        //     "name" => "Categories",
+        //     "route" => "admin_sample_category",
+        //     "link" => '/admin/sample_category',
+        //     "permissions" => ["_superadmin","_sample_category"]
+        // ],
+        [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Post",
+            "route" => "admin_post",
+            "link" => '/admin/post',
+            "permissions" => ["_superadmin","_post"]
         ],
         [
             /*
              * Route to edit the current user profile
              */
-            "name" => "Banner",
-            "route" => "Banner",
-            "link" => '/admin/banner',
-            "permissions" => ["_superadmin","_banner"]
+            "name" => "Service",
+            "route" => "admin_service",
+            "link" => '/admin/service',
+            "permissions" => ["_superadmin","_service"]
         ],
-          [
-            /*
-             * Route to edit the current user profile
-             */
-            "name" => "Detail",
-            "route" => "Detail",
-            "link" => '/admin/detail',
-            "permissions" => ["_superadmin","_detail"]
-        ],
+
     ]
 ];

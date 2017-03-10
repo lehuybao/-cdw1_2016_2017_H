@@ -23,7 +23,8 @@
         "psr-4": {
             "App\\": "app/",
             "Foostart\\Sample\\": "packages/foostart/sample/src/",
-            "Foostart\\Post\\": "packages/foostart/post/src/"
+           
+            "Foostart\\News\\": "packages/foostart/news/src/"
         }
     },
     "autoload-dev": {

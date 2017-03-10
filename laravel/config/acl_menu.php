@@ -106,14 +106,15 @@ return [
             "link" => '/admin/post',
             "permissions" => ["_superadmin","_post"]
         ],
-        [
+       
+         [
             /*
              * Route to edit the current user profile
              */
-            "name" => "Service",
-            "route" => "admin_service",
-            "link" => '/admin/service',
-            "permissions" => ["_superadmin","_service"]
+            "name" => "News",
+            "route" => "admin_news",
+            "link" => '/admin/news',
+            "permissions" => ["_superadmin","_news"]
         ],
 
     ]

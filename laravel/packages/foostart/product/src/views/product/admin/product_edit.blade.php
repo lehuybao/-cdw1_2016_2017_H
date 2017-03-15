@@ -7,7 +7,7 @@ Admin area: {{ trans('product::product_admin.page_edit') }}
 <div class="row">
     <div class="col-md-12">
 
-            <div class="col-md-8">
+        <div class="col-md-8">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title bariol-thin">
@@ -17,11 +17,13 @@ Admin area: {{ trans('product::product_admin.page_edit') }}
 
                 {{-- model general errors from the form --}}
                 @if($errors->has('product_name') )
-                    <div class="alert alert-danger">{!! $errors->first('product_name') !!}</div>
+                <div class="alert alert-danger">{!! $errors->first('product_name') !!}</div>
                 @endif
-
+                @if($errors->has('product_des') )
+                <div class="alert alert-danger">{!! $errors->first('product_des') !!}</div>
+                @endif
                 @if($errors->has('name_unvalid_length') )
-                    <div class="alert alert-danger">{!! $errors->first('name_unvalid_length') !!}</div>
+                <div class="alert alert-danger">{!! $errors->first('name_unvalid_length') !!}</div>
                 @endif
 
                 {{-- successful message --}}
@@ -38,7 +40,9 @@ Admin area: {{ trans('product::product_admin.page_edit') }}
 
 
                             <!-- SAMPLE NAME TEXT-->
-                            @include('product::product.elements.text', ['name' => 'product_name'])
+                            @include('product::product.elements.text', ['name' => 'product_name','des' => 'product_des'])
+                        
+
                             <!-- /END SAMPLE NAME TEXT -->
                             {!! Form::hidden('id',@$product->product_id) !!}
 

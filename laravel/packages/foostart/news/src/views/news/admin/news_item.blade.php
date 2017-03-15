@@ -14,16 +14,16 @@
             $nav = $news->toArray();
             $counter = ($nav['current_page'] - 1) * $nav['per_page'] + 1;
         ?>
-        @foreach($news as $news)
+        @foreach($news as $new)
         <tr>
             <td>
                 <?php echo $counter; $counter++ ?>
             </td>
-            <td>{!! $news->news_id !!}</td>
-            <td>{!! $news->news_name !!}</td>
+            <td>{!! $new->news_id !!}</td>
+            <td>{!! $new->news_name !!}</td>
             <td>
-                <a href="{!! URL::route('admin_news.edit', ['id' => $news->news_id]) !!}"><i class="fa fa-edit fa-2x"></i></a>
-                <a href="{!! URL::route('admin_news.delete',['id' =>  $news->news_id, '_token' => csrf_token()]) !!}" class="margin-left-5 delete"><i class="fa fa-trash-o fa-2x"></i></a>
+                <a href="{!! URL::route('admin_news.edit', ['id' => $new->news_id]) !!}"><i class="fa fa-edit fa-2x"></i></a>
+                <a href="{!! URL::route('admin_news.delete',['id' =>  $new->news_id, '_token' => csrf_token()]) !!}" class="margin-left-5 delete"><i class="fa fa-trash-o fa-2x"></i></a>
                 <span class="clearfix"></span>
             </td>
         </tr>

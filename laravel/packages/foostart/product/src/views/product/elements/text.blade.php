@@ -1,4 +1,3 @@
-<!-- SAMPLE NAME -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,5 +21,8 @@
     <?php $product_name = $request->get('product_titlename') ? $request->get('product_name') : @$product->product_name ?>
     {!! Form::label($name, trans('product::product_admin.name').':') !!}
     {!! Form::textarea($name, $product_name, ['class' => 'form-control', 'placeholder' => trans('product::product_admin.name').'']) !!}
+      <?php $product_des = $request->get('product_titledes') ? $request->get('product_des') : @$product->product_des ?>
+    {!! Form::label($des, trans('product::product_admin.des').':') !!}
+    {!! Form::textarea($des, $product_des, ['class' => 'form-control', 'placeholder' => trans('product::product_admin.des').'']) !!}
 </div>
 <!-- /SAMPLE NAME -->

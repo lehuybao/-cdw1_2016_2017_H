@@ -9,7 +9,8 @@ class Products extends Model {
     protected $table = 'products';
     public $timestamps = false;
     protected $fillable = [
-        'product_name'
+        'product_name',
+        'product_des'
     ];
     protected $primaryKey = 'product_id';
 
@@ -23,15 +24,13 @@ class Products extends Model {
 
         //product_name
         if (!empty($params['product_name'])) {
-            $eloquent->where('product_name', 'like', '%'. $params['product_name'].'%');
+            $eloquent->where('product_name', 'like', '%' . $params['product_name'] . '%');
         }
 
-        $products = $eloquent->paginate(10);//TODO: change number of item per page to configs
+        $products = $eloquent->paginate(10); //TODO: change number of item per page to configs
 
         return $products;
     }
-
-
 
     /**
      *
@@ -50,7 +49,7 @@ class Products extends Model {
         if (!empty($product)) {
 
             $product->product_name = $input['product_name'];
-
+            $product->product_des = $input['product_des'];
             $product->save();
 
             return $product;
@@ -68,7 +67,9 @@ class Products extends Model {
 
         $product = self::create([
                     'product_name' => $input['product_name'],
+                    'product_des' => $input['product_des'],
         ]);
         return $product;
     }
+
 }

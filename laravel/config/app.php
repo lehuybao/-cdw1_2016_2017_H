@@ -144,6 +144,10 @@ return [
       
         Foostart\News\NewsServiceProvider::class,
          Foostart\Work\WorkServiceProvider::class,
+          Foostart\Product\ProductServiceProvider::class,
+        Foostart\Contact\ContactServiceProvider::class,
+        
+        /*
         /*
          * Package Service Providers...
          */

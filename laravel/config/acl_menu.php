@@ -125,6 +125,26 @@ return [
             "link" => '/admin/work',
             "permissions" => ["_superadmin","_work"]
         ],
+           [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Product",
+            "route" => "admin_product",
+            "link" => '/admin/product',
+            "permissions" => ["_superadmin","_product"]
+        ],
+        
+             [
+            /*
+             * Route to edit the current user profile
+             */
+            "name" => "Contact",
+            "route" => "admin_contact",
+            "link" => '/admin/contact',
+            "permissions" => ["_superadmin","_contact"]
+        ],
+
 
 
     ]

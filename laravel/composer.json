@@ -25,7 +25,10 @@
             "Foostart\\Sample\\": "packages/foostart/sample/src/",
            
             "Foostart\\News\\": "packages/foostart/news/src/",
-              "Foostart\\Work\\": "packages/foostart/work/src/"
+              "Foostart\\Work\\": "packages/foostart/work/src/",
+              "Foostart\\Product\\": "packages/foostart/product/src/",
+             "Foostart\\Contact\\": "packages/foostart/contact/src/"
+            
         }
     },
     "autoload-dev": {

@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 use URL;
 use Route,
     Redirect;
-use Foostart\Work\Models\WorksCategories;
+use Foostart\Work\Models\Workscategories;
 /**
  * Validators
  */
@@ -30,7 +30,7 @@ class WorkCategoryAdminController extends Controller {
 
          $params =  $request->all();
 
-        $list_Work_category = $this->obj_Work_category->get_Works_categories($params);
+        $list_Work_category = $this->obj_Work_category->get_works_categories($params);
 
         $this->data_view = array_merge($this->data_view, array(
             'Works_categories' => $list_Work_category,

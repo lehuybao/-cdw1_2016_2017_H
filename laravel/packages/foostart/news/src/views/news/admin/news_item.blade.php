@@ -4,8 +4,8 @@
     <thead>
         <tr>
             <td style='width:5%'>{{ trans('news::news_admin.order') }}</td>
-            <th style='width:10%'>Sample ID</th>
-            <th style='width:50%'>Sample title</th>
+            <th style='width:10%'>News ID</th>
+            <th style='width:50%'>News title</th>
             <th style='width:20%'>{{ trans('news::news_admin.operations') }}</th>
         </tr>
     </thead>

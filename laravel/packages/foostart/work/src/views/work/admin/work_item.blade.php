@@ -4,8 +4,8 @@
     <thead>
         <tr>
             <td style='width:5%'>{{ trans('work::work_admin.order') }}</td>
-            <th style='width:10%'>Sample ID</th>
-            <th style='width:50%'>Sample title</th>
+            <th style='width:10%'>Work ID</th>
+            <th style='width:50%'>Work title</th>
             <th style='width:20%'>{{ trans('work::work_admin.operations') }}</th>
         </tr>
     </thead>

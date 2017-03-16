@@ -63,33 +63,7 @@ Route::group(['middleware' => ['web']], function () {
         ////////////////////////////////////////////////////////////////////////
         ////////////////////////////CATEGORIES///////////////////////////////
         ////////////////////////////////////////////////////////////////////////
-         Route::get('admin/work_category', [
-            'as' => 'admin_work_category',
-            'uses' => 'Foostart\Work\Controllers\Admin\WorkCategoryAdminController@index'
-        ]);
-
-        /**
-         * edit-add
-         */
-        Route::get('admin/work_category/edit', [
-            'as' => 'admin_work_category.edit',
-            'uses' => 'Foostart\Work\Controllers\Admin\WorkCategoryAdminController@edit'
-        ]);
-
-        /**
-         * post
-         */
-        Route::post('admin/work_category/edit', [
-            'as' => 'admin_work_category.post',
-            'uses' => 'Foostart\Work\Controllers\Admin\WorkCategoryAdminController@post'
-        ]);
-         /**
-         * delete
-         */
-        Route::get('admin/work_category/delete', [
-            'as' => 'admin_work_category.delete',
-            'uses' => 'Foostart\Work\Controllers\Admin\WorkCategoryAdminController@delete'
-        ]);
+        
         ////////////////////////////////////////////////////////////////////////
         ////////////////////////////CATEGORIES///////////////////////////////
         ////////////////////////////////////////////////////////////////////////

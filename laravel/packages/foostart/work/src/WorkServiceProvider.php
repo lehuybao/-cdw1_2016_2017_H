@@ -93,10 +93,7 @@ class WorkServiceProvider extends ServiceProvider {
                  * Categories
                  */
                 //list
-                trans('work::work_admin.page_category_list') => [
-                    'url' => URL::route('admin_work_category'),
-                    "icon" => '<i class="fa fa-users"></i>'
-                ],
+               
             ]);
             //
         });

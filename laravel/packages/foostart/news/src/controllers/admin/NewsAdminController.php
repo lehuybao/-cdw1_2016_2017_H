@@ -29,9 +29,9 @@ class NewsAdminController extends Controller {
      */
     public function index(Request $request) {
         $params = $request->all();
-
+        
         $list_news = $this->obj_news->get_news($params);
-
+      
 
         $this->data_view = array_merge($this->data_view, array(
             'news' => $list_news,
@@ -49,7 +49,7 @@ class NewsAdminController extends Controller {
 
         $news = NULL;
         $news_id = (int) $request->get('id');
-
+        
         if (!empty($news_id) && (is_int($news_id))) {
             $news = $this->obj_news->find($news_id);
         }
